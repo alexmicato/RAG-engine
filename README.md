@@ -87,8 +87,7 @@ Ask: Type your query, click "Get Answer"
 
 ## FAISS Index Management
 
-⚠️ Do NOT commit FAISS index binaries to Git
-
+Do NOT commit FAISS index binaries to Git
 
 .gitignore excludes /data/faiss_index/ and *.faiss
 Rebuild by re-running your ingest commands or scripting a bulk ingest (ingest-all)
