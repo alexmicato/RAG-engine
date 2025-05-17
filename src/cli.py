@@ -1,6 +1,6 @@
 import argparse
-from .ingest import ingest_document
-from .retriever import answer_query
+from src.ingest import ingest_document
+from src.retriever import answer_query
 
 
 def main():

@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import sys
 from pathlib import Path
+import hashlib
 
 # Ensure project root is on sys.path so src.* imports work
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
@@ -40,10 +41,10 @@ if st.button("Ingest Document"):
             doc_id = Path(uploaded_file.name).stem
         else:
             # hash the text as a fallback ID
-            doc_id = f"doc_{abs(hash(doc_text))}"
+            doc_id = hashlib.sha256(doc_text.encode("utf-8")).hexdigest()[:8]
 
         try:
-            summary = ingest_document(doc_id, doc_text)
+            summary = ingest_document(doc_text, doc_id=doc_id)
             st.success(f"Document “{doc_id}” ingested successfully!")
             st.write("**Summary:**", summary)
         except ValueError as e:
