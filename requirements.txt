@@ -1,8 +1,5 @@
-openai
 faiss-cpu
 streamlit
-python-dotenv
 pytest
-huggingface-hub
 sentence-transformers
 ollama

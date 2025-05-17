@@ -37,7 +37,5 @@ Thumbs.db
 # Local development files
 /node_modules
 
-# Data folders
-storage/
-data/processed/
-data/rejected/
+*.faiss
+/data/faiss_index/
