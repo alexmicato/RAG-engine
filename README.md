@@ -45,14 +45,14 @@ brew install ollama
 
 
 Pull Ollama models:
-bashollama pull hf.co/CompendiumLabs/bge-base-en-v1.5-gguf
+ollama pull hf.co/CompendiumLabs/bge-base-en-v1.5-gguf
 ollama pull hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF
 
 ## Setup
-bashgit clone https://github.com/your-org/concert-tour-rag.git
+git clone https://github.com/your-org/concert-tour-rag.git
 cd concert-tour-rag
 Create & activate virtualenv
-bashpython -m venv .venv
+python -m venv .venv
 
 # Windows (PowerShell)
 .\.venv\Scripts\Activate.ps1
@@ -60,26 +60,26 @@ bashpython -m venv .venv
 # macOS/Linux
 source .venv/bin/activate
 Install dependencies
-bashpip install --upgrade pip
+pip install --upgrade pip
 pip install -r requirements.txt
 Verify Ollama
-bashollama --help
+ollama --help
 
 ## CLI Usage
 Ingest a document
-bashpython -m src.cli ingest [--doc-id MY_ID] path/to/doc.txt
+python -m src.cli ingest [--doc-id MY_ID] path/to/doc.txt
 
 --doc-id (optional): defaults to filename stem
 path/to/doc.txt: UTF-8 or Latin-1 text
 
 Example:
-bashpython -m src.cli ingest sample_tour test_data/sample_tour.txt
+python -m src.cli ingest sample_tour test_data/sample_tour.txt
 Ask a question
-bashpython -m src.cli ask "Your question here"
+python -m src.cli ask "Your question here"
 
 ## Streamlit Web App
 From project root:
-bashstreamlit run src/streamlit_app.py
+streamlit run src/streamlit_app.py
 
 Ingest: Upload a .txt or paste text, click "Ingest Document"
 Ask: Type your query, click "Get Answer"
@@ -94,4 +94,4 @@ Rebuild by re-running your ingest commands or scripting a bulk ingest (ingest-al
 
 
 ## Testing
-bashpytest
+pytest
