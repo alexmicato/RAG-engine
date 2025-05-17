@@ -9,7 +9,11 @@ def main():
 
     # ingest
     p_ingest = sub.add_parser("ingest", help="Ingest a new text file")
-    p_ingest.add_argument("doc_id", help="Unique ID for the document")
+    p_ingest.add_argument(
+        "-i", "--id",
+        dest = "doc_id",
+        required = False,
+        help = "Optional document ID; if omitted, one is auto-generated")
     p_ingest.add_argument("file", help="Path to .txt file to ingest")
 
     # ask
@@ -21,7 +25,7 @@ def main():
         try:
             with open(args.file, encoding="utf-8") as f:
                 text = f.read()
-            summary = ingest_document(args.doc_id, text)
+            summary = ingest_document(text, doc_id=args.doc_id)
             print("✅ Ingested! Summary:\n", summary)
         except ValueError as e:
             print(f"❌ {e}")

@@ -5,30 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17720b3a-fbc8-4614-889d-e4a5175e712d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rag-concert-tour2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/faiss_index/index.faiss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/faiss_index/metadata.pkl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cli.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ingest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ollama_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/retriever.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/streamlit_app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/summarizer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/vectorstore.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/negative_sample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_data/sample_tour.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ingest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_retriever.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ingest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ingest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +66,7 @@
       <workItem from="1747441119595" duration="3713000" />
       <workItem from="1747481778866" duration="1654000" />
       <workItem from="1747504284749" duration="1744000" />
-      <workItem from="1747506078057" duration="2828000" />
+      <workItem from="1747506078057" duration="4253000" />
     </task>
     <servers />
   </component>
